@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --font: 'Pridi', serif;
+    --rosa: #e15d75;
+    --azul:#0b88c1;
+    --azul2:#0b87c1c5;
+    --verde:#397d54;
+}
+
+* {
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(238, 234, 234);
+    font-family: var(--font);
+}
+
+header {
+    display: flex;
+    background-color: white;
+}
+.menu {
+    display: none;
+}
+.logo {
+    width: 40%;
+    text-align: center;
+}
+.logo > img {
+    width: 14%;
+}
+nav {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav > a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+
+    padding: 0.4rem;
+    margin-right: 2.5rem;
+    transition: 0.3s;
+}
+nav  > a:hover {
+    text-decoration: underline;
+    color: var(--verde);
+}
+/* ====================================================== */
+.apresentacao {
+    background-color: var(--rosa);
+    display: flex;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.icons {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icons > span {
+    font-size: 2em;
+}
+#icon1{
+    margin-left: 24rem;
+    transform: rotate(20deg);
+    font-size: 3em;
+    color: rgb(48, 48, 238);
+    transition: 1s;
+}
+#icon2 {
+    margin-left: 15rem;
+    transform: rotate(-30deg);
+    color: yellow;
+    transition: 1s;
+}
+#icon3{
+    margin-left: 23rem;
+    transform: rotate(20deg);
+    font-size: 3em;
+    color: purple;
+    transition: 1s;
+}
+#icon4{
+    margin-right: 24rem;
+    transform: rotate(-20deg);
+    color: rgb(32, 206, 206);
+    transition: 1s;
+}
+#icon5 {
+    margin-right: 15rem;
+    transform: rotate(30deg);
+    font-size: 3em;
+    color: green;
+    transition: 1s;
+}
+#icon6{
+    margin-right: 23rem;
+    transform: rotate(-20deg);
+    transition: 1s;
+}
+.apresentacao:hover {
+    #icon1, #icon2, #icon3{
+        margin-left: calc(-4rem);
+        transform: rotate(-70deg);
+    }
+}
+.apresentacao:hover {
+    #icon4, #icon5, #icon6{
+        margin-right: calc(4rem);
+        transform: rotate(70deg);
+    }
+}
+
+.titulo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo > h2 {
+    font-weight: 400;
+    color: white;
+}
+.destaque {
+    background-image: linear-gradient(var(--azul2),var(--azul2));
+    background-size: 100% 35%;
+    background-repeat: repeat-x;
+    background-position: 0% calc(80%);
+    transition: 0.5s;
+    font-weight: 500;
+    cursor: pointer;
+}
+.destaque:hover {
+    background-size: 100% 100%;
+    text-decoration: underline;
+}
+/* ====================================================== */
+.turma {
+    background-color: var(--verde);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.308);
+    width: 40vw;
+    padding: 0.3rem;
+    margin: auto;
+
+    font-size: 1.1em;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+.jogos {
+    margin: 2rem 0rem;
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+}
+.conteudo {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.308);
+    padding: 0.4rem;
+    width: 20%;
+    margin-right: 2rem;
+    transition: 0.5s;
+}
+.conteudo:hover {
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.884);
+}
+.capa-jogo {
+    text-align: center;
+}
+.capa-jogo > img {
+    border-radius: 10px;
+}
+#xadrez > img , #baralho > img, #memoria > img{
+    width: 70%;
+}
+.txt {
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+.btn {
+    background-color: var(--azul);
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+    padding: 0.2rem;
+    text-align: center;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn > a{
+    text-decoration: none;
+    color: white;
+}
+.btn:hover {
+    width: 54%;
+    background-color: #00aeff;
+}
+/* ====================================================== */
+article {
+    background-color: var(--verde);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+#final {
+    background-color: #e15d75;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+#final > h3 {
+    font-weight: 500;
+    display: inline;
+}
+/* ====================================================== */
+article {
+    color: white;
+}
+.titulo-cad > h3{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.card {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid black;
+
+    .canais-youtube{
+        width: 40%;
+        text-align: center;
+    }
+    .info {
+        width: 60%;
+        font-weight: 400;
+    }
+    .btn-youtube {
+        width: 30%;
+        margin: auto;
+        margin-top: 14%;
+
+        background-color: var(--azul);
+        border-radius: 20px;
+        padding: 0.2rem;
+        text-align: center;
+        font-weight: 600;
+        color: white;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .btn-youtube:hover {
+        width: 44%;
+        background-color: #00aeff;
+    }
+}
+
+.canais-youtube > img, .capa-jogo-e > img{
+    width: 360px;
+    height: 215px;
+    border-radius: 10px;
+}
+.capa-jogo-e {
+    width: 40%;
+    text-align: center;
+}
+
+/* ====================================================== */
+#conta {
+    display: none;
+}
+.desafio{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-weight: 400;
+}
+.desafio > h2 {
+    font-weight: 500;
+}
+.btn-desafio{
+    width: 10%;
+    margin: auto;
+    margin-top: 1.5rem;
+    background-color: var(--rosa);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.267);
+    border-radius: 20px;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn-desafio:hover{
+    width: 15%;
+    box-shadow: 5px 5px 14px black;
+}
+
+.info-desafio {
+    margin-top: 2rem;
+    text-align: start;
+    line-height: 2em;
+}
+.info-desafio > h2 {
+    font-weight: 500;
+    margin-top: 1rem;
+    text-align: center;
+}
+#res-num {
+    font-size: 1.2em;
+    width: 5%;
+    margin-top: 1rem;
+}
+.res {
+    display: inline;
+    background-color: var(--azul);
+    border-radius: 4px;
+    padding: 0em 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.res:hover{
+    background-color: #00eeff;
+}
+#ganhou {
+    display: none;
+    font-weight: 600;
+    width: 50%;
+    margin-top: 2rem;
+    margin: auto;
+    text-align: center;
+}
+/* ====================================================== */
+#subir{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0.5rem;
+
+    background-color: gray;
+    border-radius: 40%;
+    transition: 0.5s;
+}
+#subir > a {
+    color: white;
+}
+#subir:hover{
+    background-color: var(--azul2);
+}
+/* ====================================================== */
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-final {
+    width: 50%;
+    padding: 0.5rem;
+    text-align: center;
+}
+.logo-final > img{
+    width: 10em;
+}
+.redes {
+    width: 50%;
+    padding: 0.5rem;
+}
+.rede {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.rede > a{
+    color:white;
+    text-decoration: none;
+}
+.rede > a:hover{
+    color: var(--azul);
+    text-decoration: underline;
+}
+.icones-final {
+    color: white;
+}
+.credito-final{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.credito-final > a{
+    color: white;
+}
+.credito-final > a:hover{
+    color: var(--azul);
+}

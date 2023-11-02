@@ -1,0 +1,167 @@
+@media only screen and (max-width:1200px) {
+    .conteudo {
+        width: 28%;
+    }
+    .canais-youtube > img, .capa-jogo-e > img {
+        width: 100%;
+        height: 100%;
+    }
+    .info{
+        padding-left: 1rem;
+    }
+    .btn-desafio {
+        width: 20%;
+    }
+    .btn-desafio:hover {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .btn-youtube.desablitado {
+        width: 50%;
+    }
+}
+@media only screen and (max-width:780px) {
+    .logo {
+        width: 20%;
+    }
+    .logo > img {
+        width: 50%;
+    }
+    nav {
+        width: 80%;
+    }
+    .icons {
+        width: 20%;
+    }
+    #icon1{
+        margin-left: 12rem;
+    }
+    #icon2{
+        margin-left: 8rem;
+    }
+    #icon3{
+        margin-left: 10rem;
+    }
+    #icon4{
+        margin-right: 8rem;
+    }
+    #icon5{
+        margin-right: 8rem;
+    }
+    #icon6{
+        margin-right: 8rem;
+    }
+
+    .titulo {
+        width: 60%;
+    }
+    .jogos {
+        width:90%;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteudo {
+        width: 80%;
+        margin: 1rem 0rem;
+    }
+    .card {
+        width: 100%;
+    }
+    .capa-jogo > img{
+        width: 270px;
+    }
+    .btn-youtube.desablitado {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .turma {
+        width: 70vw;
+    }
+    .card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn{
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width:550px) {
+    .logo {
+        width: 50%;
+    }
+    nav { 
+        display: none;
+    }
+    #menu-icon {
+        font-size: 2em;
+    }
+    .menu {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .opcao {
+        position: absolute;
+        top: 90px;
+        display: none;
+        flex-direction: column;
+        background-color: #0b88c1;
+        border-radius: 4px;
+
+        overflow-y: auto;
+        width: 40%;
+    }
+    .opcao > a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 600;
+        padding: 0.3rem;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .apresentacao {
+        padding: 1rem 0rem;
+    }
+    .icons {
+        display: none;
+    }
+    .titulo {
+        width: 100%;
+    }
+
+    .jogos{
+        margin-left: 1rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+
+        .canais-youtube, .info {
+            width: 80%;
+        }
+    }
+
+    .desafio {
+        width: 100%;
+    }
+    .btn-desafio {
+        width: 30%;
+    }
+    #res-num {
+        width: 10%;
+    }
+
+    .capa-jogo-e{
+        width: 80%;
+    }
+}
